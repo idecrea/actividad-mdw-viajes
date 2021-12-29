@@ -1,0 +1,175 @@
+/*
+    color__blanco: #FAFAFF
+    color__gris: #595358
+    color__naranja: #F5A65B
+    color__negro: black
+ */
+
+/* Tipografias */
+@font-face {
+    font-family: noto;
+    src: url("../fonts/NotoSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: noto;
+    src: url("../fonts/NotoSans-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: zen;
+    src: url("../fonts/ZenKurenaido-Regular.woff2") format("woff2");
+}
+
+/* Generales */
+
+body {
+    font-family: noto;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: zen;
+}
+
+img {
+   width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Fin Generales */
+
+/* Header */
+
+.header {
+    max-width: 22rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header__avatar {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.header__subtitle {
+    color: #595358;
+    font-size: 1rem;
+}
+
+.nav__ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    display: block;
+    padding: .8rem .5rem;
+    font-weight: bold;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    text-decoration-color: #F5A65B;
+    text-decoration-thickness: 3px;
+    text-underline-offset: .5rem;
+}
+
+/* Fin Header */
+
+/* Section blog */
+
+.container--blog {
+    max-width: 40rem;
+}
+
+.article__title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.article__content-time {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #595358;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.article__cover {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.article__text {
+    color: #595358;
+    margin: 2rem auto;
+}
+
+.article__read-more {
+    display: inline-block;
+    background-color: #F5A65B;
+    color: white;
+    padding: .8rem 2rem;
+    border-radius: .2rem;
+    transition: .3s;
+}
+
+.article__read-more:hover {
+    background-color: #595358;
+}
+
+/* Fin Section blog */
+
+/* Footer */
+
+.footer {
+    max-width: 12rem;
+    margin: 0 auto;
+}
+
+.footer-nav__ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav__link {
+    background-color: #595358;
+    display: block;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer-nav__icono {
+    width: 1.5rem;
+}
+
+.footer__text {
+    color: #595358;
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+/* Fin Footer */
